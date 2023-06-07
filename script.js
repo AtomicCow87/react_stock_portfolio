@@ -102,7 +102,9 @@ var Portfolio = function (_React$Component) {
     value: function render() {
       var _this2 = this;
 
-      var portfolio = this.state.portfolio;
+      var _state = this.state,
+          portfolio = _state.portfolio,
+          form = _state.form;
 
 
       var portfolio_market_value = portfolio.reduce(function (sum, stock) {

@@ -76,7 +76,10 @@ class Portfolio extends React.Component {
   }
 
   render() {
-    const { portfolio } = this.state;
+    const {
+      portfolio,
+      form,
+    } = this.state;
 
     const portfolio_market_value = portfolio.reduce((sum, stock) => stock.shares_owned * stock.market_price + sum, 0);
   
